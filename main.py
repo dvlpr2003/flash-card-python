@@ -4,12 +4,12 @@ from quiz import quiz
 root = Tk()
 root.geometry("800x500")
 root.title("FLASH CARD")
-myLabel = Label(text="hello",font=("Ariel",20,"bold"))
+myLabel = Label(text="",font=("Ariel",20,"bold"))
 myLabel.pack()
 canva = Canvas(root,width=200,height=200,bg="blue" )
 canva.pack(pady=70)
 check_condition = False
-cavatxt = canva.create_text(100,100,text="Start")
+canvatxt = canva.create_text(100,100,text="Start")
 Questionlvl = 0
 def change_color():
     global Questionlvl
